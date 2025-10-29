@@ -1,0 +1,52 @@
+/* Sidebar Menu di Samping Kanan */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* agar isi ke kanan */
+    padding: 0 20px;
+    z-index: 10;
+}
+
+/* Logo */
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: auto; /* dorong ke kiri */
+    border: 2px solid white;
+}
+
+/* Menu */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Konten bergeser ke bawah navbar */
+.benner {
+    margin-top: 80px; /* supaya tidak ketutup navbar */
+    padding: 20px;
+}
